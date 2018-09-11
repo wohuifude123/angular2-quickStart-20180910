@@ -1,5 +1,62 @@
-/node_modules
-/typings
-/app/*.js
-/app/*.map
+# FE ignore
+node_modules
+bower_components
 
+# debug ignore
+# 忽略所有build目录下的文件，但如果是名为build的文件则不忽略
+build/
+npm-debug.log
+dist/
+
+# compiled output
+/tmp
+
+# IDE ignore
+.DS_Store
+.idea
+
+.vscode
+
+# 忽略特定文件或文件夹
+package-lock.json
+
+# 只忽略当前目录下的public目录，子目录的public不在忽略范围内
+/public/*
+!/public/config/README
+
+# 只忽略当前目录下的test目录，子目录的test不在忽略范围内
+
+/test/
+
+/service/config/setting.js
+
+# dependencies
+/public/bower_components
+package-lock.json
+
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+#System Files
+.DS_Store
+Thumbs.db
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Build Artifacts
+upload.zip
+resetConfig.sh
